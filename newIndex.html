@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">      
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+
+
+<div id="aboveContainer">
+    <div class="container" id="logIn">
+        <div class="contentDiv">
+            <h1>התחברות</h1>
+                <div class="inputsDiv">
+                    <input id="emailLogIn" type="email" placeholder="email" style="margin-bottom: 5px;" required>
+                    <input id="passLogIn" type="text" placeholder="password" required>
+                </div>
+                <p>עדיין לא נרשמת ? <span onclick="signUpForm()" style="cursor: pointer;color: blue;">לחץ כאן</span> להירשם</p>
+                <button onclick="logIn()">התחברות</button>
+        </div>
+    </div>
+
+    <div class="container" id="signUp">
+        <div class="contentDiv">
+                <h1>הרשמה</h1>
+                <div class="inputsDiv">
+                    <input id="firstNameSingUp" type="text" placeholder="first name" style="margin-bottom: 5px;" required>
+                    <input id="lastNameSingUp" type="text" placeholder="last name" style="margin-bottom: 5px;" required>
+                    <input id="emailSingUp" type="email" placeholder="email" style="margin-bottom: 5px;" required>
+                    <input id="passSingUp" type="text" placeholder="password" style="margin-bottom: 5px;" required>
+                    <label for="confirmSingUp">הנני מאשר/ת את תנאי האתר</label>
+                    <input id="confirmSingUp" type="checkbox">
+                </div>
+                <p> להתחברות <span onclick="logInForm()" style="cursor: pointer;color: blue;">לחץ כאן</span></p>
+                <button onclick="signUp()" id="signUpBtn">הרשמה</button>
+        </div>
+    </div>
+</div>
+    
+<div id="tableContainer">
+    <table id="usersTb">
+        <caption>טבלת משתמשים</caption>
+        <tr>
+            <th>שם פרטי</th>
+            <th>שם משפחה</th>
+            <th>אימייל</th>
+            <th>סיסמא</th>
+            <th>סטטוס</th>
+            <th>התנתקות</th>
+            <th>מחיקה</th>
+            <th>עריכה</th>
+        </tr>
+        
+    </table>
+</div>
+   
+
+
+<script src="js/newScript.js"></script>
+</body>
+</html>
